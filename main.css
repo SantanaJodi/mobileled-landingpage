@@ -98,15 +98,6 @@ article {
   margin: 1rem 0rem;
 }
 
-#mobile-led-hero {
-  width: 100%;
-  height: auto;
-}
-
-#mobile-led-logo {
-  margin-bottom: 1rem;
-}
-
 .buttons-wrapper {
   margin: 1rem 0rem;
 }
@@ -148,6 +139,17 @@ button {
 /* === SPECIFIC === */
 .down-arrow {
   margin-left: .2rem;
+}
+
+/* === MAIN SECTION === */
+#mobile-led-hero {
+  width: 100%;
+  height: auto;
+}
+
+#mobile-led-logo {
+  margin-bottom: 1rem;
+  width: 10rem;
 }
 
 /* === UVP === */
@@ -247,9 +249,10 @@ section.product-np-btn {
   margin: 0rem .5rem;
   background-color: #fab800;
   border-radius: 100px;
-  box-shadow: 4px 8px 12px rgba(250, 184, 0, 0.25);
+  box-shadow: 4px 8px 12px rgba(250, 184, 0, 0.5);
   text-decoration: none;
   font-weight: bold;
+  color: #2f2f2f;
 }
 
 .ads-btn img, .ads-btn p{

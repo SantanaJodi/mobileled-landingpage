@@ -231,6 +231,11 @@ section.slider-wrapper-route .slick-slide {
   color: #858585;
 }
 
+.slider-wrapper-blog > a {
+  text-align: center;
+  text-decoration: none;
+}
+
 /* === BUTTON PRODUCT === */
 section.product-np-btn {
   justify-content: space-between;

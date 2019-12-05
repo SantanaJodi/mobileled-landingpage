@@ -184,7 +184,11 @@ section.slider-wrapper-route .slick-slide {
   height: auto !important;
   background-color: none;
   box-shadow: none;
-  margin: 0rem -.3rem;
+  margin: 0rem 0rem;
+}
+
+.carouse-route div img {
+  width: 250px;
 }
 
 /* === BLOG === */
@@ -226,12 +230,7 @@ section.slider-wrapper-route .slick-slide {
 }
 
 /* === FOOTER === */
-footer {
-  height: calc(100vh - 63px);
-}
-
 .featuredon-slider-wrapper {
-  height: 16%;
   background-color: #ec1f7f;
   overflow: hidden;
 }
@@ -243,10 +242,7 @@ footer {
 }
 
 .carouse-featuredon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .client{
@@ -261,7 +257,6 @@ footer {
 }
 
 .footer {
-  height: 84%;
   background-color: #4e277a;
   padding: 1rem 2rem;
 }

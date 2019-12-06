@@ -21,11 +21,11 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #4e277a;
   margin: .5rem 0rem;
-  line-height: 4rem;
+  line-height: 2.5rem;
 }
 
 h2 {
@@ -55,7 +55,12 @@ p {
   color: #2f2f2f
 }
 
-/* SLICK & SLIDER */
+a {
+  text-decoration: none;
+  margin: .5rem 0rem;
+}
+
+/* === SLICK & SLIDER === */
 .slick-list {
   overflow: hidden;
   margin: 0rem -2rem;
@@ -300,14 +305,34 @@ section.product-np-btn {
   color: #fab800;
 }
 
-.footer ul li {
-  color: #fafafa;
-  margin: 2rem 0rem;
-  display: flex;
-  justify-content: space-between;
+/* === ACCORDION === */
+
+#footer-accordion {
+  margin-bottom: 2rem;
 }
 
-/* FORM */
+#footer-accordion h3 {
+  color: #fafafa;
+  margin: 1.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#footer-accordion div {
+  margin-top: -1rem;
+  height: 0px;
+  overflow-y: hidden;
+  transition: 1s;
+}
+
+#footer-accordion div a {
+  display: block;
+  color: #fafafa;
+  margin: 1rem 0rem;
+}
+
+/* === FORM === */
 .data-input {
   width: 65%;
   height: 2.5rem;
@@ -355,7 +380,7 @@ section.product-np-btn {
   display: block;
 }
 
-p.active {
+p.active-lang {
   color: #ec1f7f;
   margin-right: 1rem;
 }

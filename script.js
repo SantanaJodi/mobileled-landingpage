@@ -27,4 +27,12 @@ $(document).ready(function(){
     autoplaySpeed: 2000,
     arrows: false
   })
+
+  $('#footer-accordion h3').click(function(){
+    if ($(this).next().css('height') == '0px'){
+      $(this).next('div').css('height', 'auto');
+    } else {
+      $(this).next('div').css('height','0px');
+    }
+  })
 })

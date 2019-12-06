@@ -20,11 +20,80 @@
   </head>
 
   <body>
+    <!-- === NAV MENU === -->
+    <div class="blackout"></div>
+
+    <div class="navmenu">
+      <div class="logo-closebtn flex">
+        <img src="assets/se-white-logo.svg" alt="se-white-logo">
+
+        <a href="#" id="close-navmenu">x</a>
+      </div>
+      <div class="content-menu">
+        <a href="#">About Us</a>
+        <a href="#" id="product">Product</a>
+        <ul>
+          <div class="triangle-right"></div>
+          <li>
+            <a href="#">StickMob</a>
+          </li>
+          <li>
+            <a href="#">StickMotor</a>
+          </li>
+          <li>
+            <a href="#">StickMart</a>
+          </li>
+          <li>
+            <a href="#">StickBus</a>
+          </li>
+          <li>
+            <a href="#">Mobile LED</a>
+          </li>
+          <li>
+            <a href="#">StickAngkot</a>
+          </li>
+          <li>
+            <a href="#">StickPlane</a>
+          </li>
+        </ul>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <hr>
+
+      <div class="language flex">
+        <a href="#" class="active-lang">English</a>
+        <a href="#">Indonesian</a>
+      </div>
+
+      <div class="socmed">
+        <a href="https://www.instagram.com/stickearn/" target="_blank">
+          <img src="assets/socmed/Vector-0.svg" alt="ig-ico">
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCU-K6erHrp4RIbrPReKNVWw" target="_blank">
+          <img src="assets/socmed/Vector-1.svg" alt="yt-ico">
+        </a>
+
+        <a href="https://www.linkedin.com/company/stickearn/" target="_blank">
+          <img src="assets/socmed/Vector-2.svg" alt="in-ico">
+        </a>
+
+        <a href="https://www.facebook.com/stickearn/" target="_blank">
+          <img src="assets/socmed/Vector-3.svg" alt="fb-ico">
+        </a>
+      </div>
+
+      <a href="#" class="ads-now">Advertise Now</a>
+    </div>
+
     <!-- === NAVBAR MOBILE === -->
     <nav>
       <div class="nav-limiter">
         <img src="assets/se-main-logo.svg" alt="stickearn-logo">
-        <img src="assets/hamburger-menu.svg" alt="hamburger-menu">
+
+        <img src="assets/hamburger-menu.svg" alt="hamburger-menu" id="hamburger">
       </div>
     </nav>
 
@@ -167,9 +236,7 @@
         </div>
       </div>
 
-      <a href="https://stickearn.com/blog">
-        <h2>Read more +</h2>
-      </a>
+      <a href="https://stickearn.com/blog" class="teritary-button flex">Read More +</a>
     </section>
 
     <!-- === PRODUCT NAVIGATION === -->
@@ -299,8 +366,8 @@
         </div>
 
         <div class="language flex">
-          <p class="active-lang">English</p>
-          <p>Indonesian</p>
+          <a href="#" class="active-lang">English</a>
+          <a href="#">Indonesian</a>
         </div>
       </div>
     </footer>

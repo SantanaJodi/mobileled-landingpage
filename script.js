@@ -37,4 +37,27 @@ $(document).ready(function(){
       $(this).css('color', '#fafafa');
     }
   })
+
+  $('#product').click(function(){
+    if ($('.content-menu ul').css('opacity') == '0'){
+      $('.content-menu ul').css('opacity','1');
+    } else {
+      $('.content-menu ul').css('opacity','0')
+    }
+  })
+
+  $('#hamburger').click(function(){
+    $('.blackout').css('display', 'block');
+    $('.navmenu').css('right', '0rem');
+  })
+
+  $('.blackout').click(function(){
+    $('.blackout').css('display', 'none');
+    $('.navmenu').css('right', '-15rem');
+  })
+
+  $('#close-navmenu').click(function(){
+    $('.blackout').css('display', 'none');
+    $('.navmenu').css('right', '-15rem');
+  })
 })

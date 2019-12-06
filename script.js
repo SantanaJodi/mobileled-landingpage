@@ -31,8 +31,10 @@ $(document).ready(function(){
   $('#footer-accordion h3').click(function(){
     if ($(this).next().css('height') == '0px'){
       $(this).next('div').css('height', 'auto');
+      $(this).css('color', '#ec1f7f');
     } else {
       $(this).next('div').css('height','0px');
+      $(this).css('color', '#fafafa');
     }
   })
 })

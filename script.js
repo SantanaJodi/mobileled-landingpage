@@ -72,7 +72,7 @@ $(document).ready(function(){
 
   $('#scrollto-route').click(function(){
     $('html, body').animate({
-      scrollTop: scroll - 80
+      scrollTop: scroll - 40
     }, 1000)
   })
 })

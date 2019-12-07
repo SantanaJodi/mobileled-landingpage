@@ -39,9 +39,11 @@ $(document).ready(function(){
   })
 
   $('#product').click(function(){
-    if ($('.content-menu ul').css('opacity') == '0'){
-      $('.content-menu ul').css('opacity','1');
+    if ($('.content-menu ul').css('visibility') == 'hidden'){
+      $('.content-menu ul').css('visibility','visible')
+      $('.content-menu ul').css('opacity','1')
     } else {
+      $('.content-menu ul').css('visibility','hidden')
       $('.content-menu ul').css('opacity','0')
     }
   })
@@ -54,10 +56,14 @@ $(document).ready(function(){
   $('.blackout').click(function(){
     $('.blackout').css('display', 'none');
     $('.navmenu').css('right', '-15rem');
+    $('.content-menu ul').css('visibility','hidden')
+    $('.content-menu ul').css('opacity','0')
   })
 
   $('#close-navmenu').click(function(){
     $('.blackout').css('display', 'none');
     $('.navmenu').css('right', '-15rem');
+    $('.content-menu ul').css('visibility','hidden')
+    $('.content-menu ul').css('opacity','0')
   })
 })

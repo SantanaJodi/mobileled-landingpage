@@ -194,7 +194,7 @@ button {
 }
 
 .content-menu ul {
-  height: 15rem;
+  height: auto;
   top: 7rem;
   left: -6.5rem;
   position: absolute;
@@ -202,7 +202,7 @@ button {
   border-radius: 12px;
   opacity: 0;
   transition: .3s ease;
-  /* overflow-y: hidden; */
+  visibility: hidden;
 }
 
 .content-menu ul li a {

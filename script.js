@@ -68,9 +68,11 @@ $(document).ready(function(){
   })
 
   // SCROLL TO ROUTE
+  var scroll = $('.slider-wrapper-route').offset().top;
+
   $('#scrollto-route').click(function(){
     $('html, body').animate({
-      scrollTop: $('.schedule').offset().top
+      scrollTop: scroll - 80
     }, 1000)
   })
 })

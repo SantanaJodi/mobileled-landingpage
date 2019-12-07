@@ -196,7 +196,7 @@ button {
 .content-menu ul {
   height: auto;
   top: 7rem;
-  left: -6.5rem;
+  left: -5.5rem;
   position: absolute;
   background-color: #ec1f7f;
   border-radius: 12px;
@@ -207,9 +207,9 @@ button {
 
 .content-menu ul li a {
   display: block;
-  margin: 1rem;
-  color: #2f2f2f;
+  padding: .5rem 1rem;
   color: #fafafa;
+  font-size: .8rem;
 }
 
 .ads-now {

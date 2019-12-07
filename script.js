@@ -66,4 +66,11 @@ $(document).ready(function(){
     $('.content-menu ul').css('visibility','hidden')
     $('.content-menu ul').css('opacity','0')
   })
+
+  // SCROLL TO ROUTE
+  $('#scrollto-route').click(function(){
+    $('html, body').animate({
+      scrollTop: $('.schedule').offset().top
+    }, 1000)
+  })
 })

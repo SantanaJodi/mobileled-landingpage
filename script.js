@@ -106,4 +106,18 @@ $(document).ready(function(){
   })
 
   // !!! MEDIA QUERY !!!
+  if ($(window).innerWidth() >= 900) {
+    $('.carouse').slick('unslick');
+    $('.carouse-featuredon').slick('unslick');
+
+    $('.carouse').css({
+      'display': 'flex',
+      'justify-content':'center',
+      'align-items': 'center',
+    });
+  }
+
+  $(window).resize(function(){
+    location.reload();
+  })
 })

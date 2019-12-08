@@ -97,7 +97,7 @@ $(document).ready(function(){
   $('#scrollto-route').click(function(){
     var scroll = $('.slider-wrapper-route').offset().top;
     $('html, body').animate({
-      scrollTop: scroll / 1.2
+      scrollTop: scroll - 80
     }, 1000);
   })
 

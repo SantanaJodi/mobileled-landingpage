@@ -2,7 +2,7 @@ $(document).ready(function(){
   // LOADER
   $(window).load(function() {
 		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
+		$('.se-pre-con').css('height', '0%');;
 	});
 
   // SLIDER

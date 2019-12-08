@@ -5,16 +5,37 @@ $(document).ready(function(){
     dots: true,
     variableWidth: true,
     focusOnSelect: true,
-    arrows: false
+    arrows: false,
+    mobileFirst: true,
+
+    // Responsive
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        initialSlide: 1,
+      }
+    }]
   })
 
   $('.carouse-route').slick({
     infinite: false,
     centerMode: true,
-    dots: false,
     variableWidth: true,
-    focusOnSelect: true,
-    arrows: false
+    focusOnSelect: false,
+    arrows: false,
+    mobileFirst: true,
+
+    // Responsive
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        centerMode: false,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 2,
+        slidesToShow: 3
+      }
+    }]
   })
 
   $('.carouse-featuredon').slick({
@@ -28,16 +49,20 @@ $(document).ready(function(){
     arrows: false
   })
 
-  $('#footer-accordion h3').click(function(){
-    if ($(this).next().css('height') == '0px'){
-      $(this).next('div').css('height', 'auto');
+  // ACCORDION
+  $('#footer-accordion > a').click(function(){
+    if ($(this).next().css('max-height') == '0px'){
+      $(this).next('div').css('max-height', '500px');
       $(this).css('color', '#ec1f7f');
+      $(this).find('img').css('transform', 'rotate(180deg)');
     } else {
-      $(this).next('div').css('height','0px');
+      $(this).next('div').css('max-height','0px');
       $(this).css('color', '#fafafa');
+      $(this).find('img').css('transform', 'rotate(0deg)');
     }
   })
 
+  // NAV SLIDE IN
   $('#product').click(function(){
     if ($('.content-menu ul').css('visibility') == 'hidden'){
       $('.content-menu ul').css('visibility','visible')
@@ -48,6 +73,7 @@ $(document).ready(function(){
     }
   })
 
+  // HAMBURGER MENU
   $('#hamburger').click(function(){
     $('.blackout').css('display', 'block');
     $('.navmenu').css('right', '0rem');
@@ -68,11 +94,16 @@ $(document).ready(function(){
   })
 
   // SCROLL TO ROUTE
-  var scroll = $('.slider-wrapper-route').offset().top;
-
   $('#scrollto-route').click(function(){
+    var scroll = $('.slider-wrapper-route').offset().top;
     $('html, body').animate({
-      scrollTop: scroll - 40
-    }, 1000)
+      scrollTop: scroll / 1.2
+    }, 1000);
   })
+
+  $('.buttons-wrapper').hover(function(){
+    $('.primary-button').toggleClass('prime-btn-hover');
+  })
+
+  // !!! MEDIA QUERY !!!
 })

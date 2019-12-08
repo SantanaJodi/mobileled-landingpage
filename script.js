@@ -1,4 +1,11 @@
 $(document).ready(function(){
+  // LOADER
+  $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
+  // SLIDER
   $('.carouse').slick({
     infinite: false,
     centerMode: true,

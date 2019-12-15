@@ -102,10 +102,6 @@ $(document).ready(function(){
     }, 1000);
   })
 
-  $('.buttons-wrapper').hover(function(){
-    $('.primary-button').toggleClass('prime-btn-hover');
-  })
-
   // !!! MEDIA QUERY !!!
   if ($(window).innerWidth() >= 900) {
     $('.carouse').slick('unslick');
@@ -115,6 +111,10 @@ $(document).ready(function(){
       'display': 'flex',
       'justify-content':'center',
       'align-items': 'center',
-    });
+    })
+
+    $('.buttons-wrapper').hover(function(){
+      $('.primary-button').toggleClass('prime-btn-hover');
+    })
   }
 })

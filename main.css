@@ -60,10 +60,6 @@ a {
   margin: .5rem 0rem;
 }
 
-.blackshadow-hvr:hover {
-  box-shadow: 4px 8px 22px rgba(0, 0, 0, 0.20);
-}
-
 /* === SLICK & SLIDER === */
 .slick-list {
   overflow: hidden;
@@ -299,10 +295,6 @@ section.slider-wrapper-route .slick-slide {
   transition: .5s ease;
 }
 
-.carouse-route a:hover {
-  transform: scale(1.1);
-}
-
 .carouse-route a img {
   width: 250px;
 }
@@ -390,10 +382,6 @@ section.product-np-btn {
   font-weight: bold;
   color: #2f2f2f;
   transition: .5s ease
-}
-
-.ads-btn a:hover {
-  box-shadow: 8px 16px 18px rgba(250, 184, 0, 0.5);
 }
 
 .ads-btn img, .ads-btn p{
@@ -527,6 +515,23 @@ a.active-lang {
 /* __Footer */
 .socmed_tab{
   display: none;
+}
+
+@media (hover: hover) {
+  /* Route */
+  .carouse-route a:hover {
+    transform: scale(1.1);
+  }
+
+  /* General - Hover */
+  .blackshadow-hvr:hover {
+    box-shadow: 4px 8px 22px rgba(0, 0, 0, 0.20);
+  }
+
+  /* Footer */
+  .ads-btn a:hover {
+    box-shadow: 8px 16px 18px rgba(250, 184, 0, 0.5);
+  }
 }
 
 @media screen and (min-width: 600px) {

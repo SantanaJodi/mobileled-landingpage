@@ -1,10 +1,4 @@
 $(document).ready(function(){
-  // LOADER
-  $(window).load(function() {
-		// Animate loader off screen
-		$('.se-pre-con').css('height', '0%');;
-	});
-
   // SLIDER
   $('.carouse').slick({
     infinite: false,
@@ -123,8 +117,4 @@ $(document).ready(function(){
       'align-items': 'center',
     });
   }
-
-  // $(window).resize(function(){
-  //   location.reload()
-  // })
 })

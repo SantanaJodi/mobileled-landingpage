@@ -472,7 +472,7 @@ section.product-np-btn {
   background-color: #ec1f7f;
   border-radius: 0px 50px 50px 0px;
   font-weight: bold;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   opacity: 1;
 }
 
